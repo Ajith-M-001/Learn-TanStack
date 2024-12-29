@@ -24,18 +24,18 @@ const Header = () => {
             >
               Add User
             </Link>
-            <a
-              href="#pagination"
+            <Link
+              to="pagination"
               className="text-gray-700 hover:text-indigo-600 px-3 py-2 text-sm font-medium"
             >
               Pagination
-            </a>
-            <a
-              href="#infinite"
+            </Link>
+            <Link
+              to="infinite-scroll"
               className="text-gray-700 hover:text-indigo-600 px-3 py-2 text-sm font-medium"
             >
               Infinite Scroll
-            </a>
+            </Link>
             <Link
               to="users"
               className="text-gray-700 hover:text-indigo-600 px-3 py-2 text-sm font-medium"
@@ -87,20 +87,20 @@ const Header = () => {
               >
                 Add User
               </Link>
-              <a
-                href="#pagination"
+              <Link
+                to="pagination"
                 className="text-gray-700 hover:text-indigo-600 px-3 py-2 text-sm font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Pagination
-              </a>
-              <a
-                href="#infinite"
+              </Link>
+              <Link
+                to="infinite-scroll"
                 className="text-gray-700 hover:text-indigo-600 px-3 py-2 text-sm font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Infinite Scroll
-              </a>
+              </Link>
               <Link
                 to="users"
                 className="text-gray-700 hover:text-indigo-600 px-3 py-2 text-sm font-medium"

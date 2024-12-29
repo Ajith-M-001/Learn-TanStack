@@ -4,6 +4,8 @@ import Homepage from "./pages/Homepage";
 import AddUser from "./pages/AddUser";
 import AllUser from "./pages/AllUser";
 import DetailPage from "./pages/DetailPage";
+import Pagination from "./pages/Pagination";
+import InfiniteScroll from "./pages/InfiniteScroll";
 
 const App = () => {
   return (
@@ -12,9 +14,11 @@ const App = () => {
         <Route path="/" element={<MainLayout />}>
           <Route index element={<Homepage />} />
           <Route path="add-user" element={<AddUser />} />
-          <Route path="edit-user/:userId" element={<AddUser />} />
           <Route path="users" element={<AllUser />} />
           <Route path="users/:userId" element={<DetailPage />} />
+          <Route path="edit-user/:userId" element={<AddUser />} />
+          <Route path="pagination" element={<Pagination />} />
+          <Route path="infinite-scroll" element={<InfiniteScroll />} />
         </Route>
       </Routes>
     </BrowserRouter>

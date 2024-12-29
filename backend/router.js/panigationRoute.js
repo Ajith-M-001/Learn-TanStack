@@ -3,6 +3,10 @@ import { getAllPosts } from "../controllers/PaginationControllers.js";
 
 const router = express.Router();
 
-router.get("/all", getAllPosts); // Read all users
+// Route for paginated posts
+router.get("/pagination", getAllPosts);
+
+// Route for infinite scroll posts
+router.get("/infinite", getAllPosts);
 
 export default router;
